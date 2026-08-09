@@ -1,4 +1,5 @@
 import PropertySearch from "../../../../components/PropertySearch";
+import propertyData from "../../../../data/properties/shinjuku-nishishinjuku.json";
 
 export default async function TownPage({
   params,
@@ -8,11 +9,10 @@ export default async function TownPage({
   const { town } = await params;
   const townName = decodeURIComponent(town);
 
-  const properties = [
-    `${townName} サンプルマンションA`,
-    `${townName} サンプルマンションB`,
-    `${townName} サンプルアパートC`,
-  ];
+  const properties =
+    townName === "西新宿"
+      ? propertyData.properties
+      : [];
 
   const basePath = `/tokyo/shinjuku/${encodeURIComponent(townName)}`;
 
