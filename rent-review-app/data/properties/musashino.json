@@ -1,0 +1,22 @@
+{
+  "area": "武蔵野市",
+  "source": "OpenStreetMap",
+  "towns": {
+    "吉祥寺南町": [
+      "パインクレスト"
+    ],
+    "境": [
+      "century musasisakai",
+      "バウス武蔵境"
+    ],
+    "桜堤": [
+      "Musashino Royal Ark",
+      "パークシティ武蔵野桜堤"
+    ],
+    "緑町": [
+      "ディアハウス",
+      "藤和ライブタウン武蔵野緑町"
+    ]
+  },
+  "unmatchedCount": 151
+}

@@ -1,0 +1,228 @@
+{
+  "area": "台東区",
+  "source": "OpenStreetMap",
+  "towns": {
+    "三筋": [
+      "Chemin de Soie",
+      "Con Moto Mikuni",
+      "ソレイユ アン",
+      "ラクラス新御徒町",
+      "ラツールミノワ",
+      "三水堂フラッツ",
+      "石井ビル"
+    ],
+    "上野": [
+      "Albero Ueno Chojamachi",
+      "Clover Court Kuromoncho",
+      "Comforia上野広小路",
+      "DUO SCALA UENO",
+      "Grand Force Akihabara",
+      "PARK HABIO UENO3CHOME",
+      "REIKO RENA",
+      "RESIDIA AKIHABARA",
+      "TKSビル",
+      "アクロス秋葉原",
+      "パークアクシス上野三丁目",
+      "ピドル川田",
+      "モトビル末広町",
+      "ライオンズタワー上野黒門町",
+      "リストレジデンス上野黒門町",
+      "ルミネ湯島"
+    ],
+    "上野桜木": [
+      "ロイジェント上野桜木"
+    ],
+    "元浅草": [
+      "CLIO MOTOASAKUSA",
+      "アルポルト",
+      "グレフル江原",
+      "ポセイドンパティオ",
+      "マルキクレジデンス"
+    ],
+    "入谷": [
+      "Manyju"
+    ],
+    "北上野": [
+      "Dragon Mansion 上野壱番館",
+      "MYビル",
+      "コンフォート上野",
+      "サンハイツ名古屋",
+      "ヴァンヴェール上野"
+    ],
+    "千束": [
+      "ふくのゆ",
+      "エムビル",
+      "スカイピア浅草",
+      "ベルコート",
+      "ペガサスマンション千束",
+      "台東ハイツ"
+    ],
+    "台東": [
+      "AIR秋葉原",
+      "BKビル",
+      "C'esar Okachimachi",
+      "Cuby Court",
+      "Duo Stage Okachimachi",
+      "FERIO御徒町",
+      "GREEN OKACHIMACHI",
+      "KDXレジデンス御徒町",
+      "LEXE Akihabara East",
+      "Nakamichi Mansion",
+      "Paseo上野御徒町",
+      "REALIZE AKIHABARA",
+      "UN REVE秋葉原",
+      "VELL STAGE AKIHABARA II",
+      "Vell Stage Akihabara",
+      "W.I.Tパレス",
+      "WELL BRIGHT",
+      "アイル秋葉原NORTH弐番館",
+      "アクセス御徒町",
+      "キングスパレス",
+      "クラシックビル",
+      "グランベルセントラルステージ",
+      "グレイス福嶋",
+      "コーポ鈴清",
+      "サンハイム秋葉原",
+      "シャトレ秋葉原",
+      "シャトー　クロッシェ　アーブル",
+      "シュヴァリエ7",
+      "スカイビュー秋葉原",
+      "スターハイツ台東",
+      "ステージグランデ秋葉原",
+      "ダイアパレス",
+      "ダイアパレス御徒町Ⅴ",
+      "ダイアパレス竹町",
+      "ティアコートK",
+      "ハイツ御徒町A",
+      "ハイツ御徒町B",
+      "ハイム秋葉原",
+      "パークハウスTakecho",
+      "フォレスト台東",
+      "メゾン秋葉原",
+      "ユーハイツ御徒町",
+      "ラシーネ秋葉原",
+      "ラ・メゾン秋葉原",
+      "リディア武蔵",
+      "ロクテイル秋葉原",
+      "台東マンション",
+      "土田マンション",
+      "手塚ビル",
+      "日興パレス秋葉原",
+      "秋山マンション",
+      "秋山マンション2"
+    ],
+    "小島": [
+      "Artessimo Rigs",
+      "LA PAZ TOWA",
+      "MINOAKA Shin-Okachimachi",
+      "Social House OKACHIMACHI",
+      "アルス新御徒町",
+      "エスグランデ御徒町",
+      "ノートルメゾン",
+      "蔵前グリーンプラザ壱番館"
+    ],
+    "東上野": [
+      "Brillia上野Garden",
+      "Plaza平和",
+      "アーバンコート",
+      "クレイン上野ハイツ",
+      "グローシア上野",
+      "ザ・パークハウス上野",
+      "リヴェール東上野",
+      "ルネフラッツ上野稲荷町",
+      "上野アインスタワー",
+      "瀬島ビル"
+    ],
+    "松が谷": [
+      "Barrio",
+      "CLiO la belle vie UENO MATSUGAYA",
+      "Comfort松が谷",
+      "Park Axis",
+      "REALIZE ASAKUSA IV",
+      "アーク入谷",
+      "エクセルコート",
+      "グランパセオ上野稲荷町",
+      "シントミプラザ稲荷町",
+      "パークアクシス上野イースト",
+      "パークサイド",
+      "古市ビル3",
+      "松が谷ドミール",
+      "関田ビル"
+    ],
+    "柳橋": [
+      "Wistaria柳橋"
+    ],
+    "根岸": [
+      "加藤ハイツ"
+    ],
+    "池之端": [
+      "クレヴィア上野池之端",
+      "ブリリアタワー上野池之端",
+      "ライオンズマンション池之端",
+      "池之端ビルハイマンション"
+    ],
+    "浅草": [
+      "AKビル",
+      "Terrace Asakusa",
+      "フレスコ浅草",
+      "メゾン美珈"
+    ],
+    "浅草橋": [
+      "ANNEX NARA",
+      "Contento浅草橋",
+      "DUO SCALA AKIHABARA",
+      "Gran Tiara Asakusabashi",
+      "LIONS ASAKUSABASHI Residence",
+      "Maison Grace",
+      "THEパームス浅草橋 PARC RE・STA",
+      "アヴニール浅草橋",
+      "アーバン浅草橋",
+      "クイーンハイツ浅草橋",
+      "コンフォリア浅草橋",
+      "サンスターレ浅草橋",
+      "シティコープ浅草橋III",
+      "シャンドール",
+      "パークアクシス",
+      "ヒロマンション",
+      "プレール・ドゥーク秋葉原EAST",
+      "メゾン・ド・ヴィレ浅草橋",
+      "リトルズトーン浅草橋",
+      "リブラン今井",
+      "月村マンション",
+      "浅草橋グランドハイツ",
+      "浅草橋シティハイツ",
+      "浅草橋ハイム",
+      "鳥越尾形シャルム"
+    ],
+    "秋葉原": [
+      "フジシーエムビル"
+    ],
+    "蔵前": [
+      "Conforte Heim Kuramae",
+      "Gardenia Kuramae",
+      "ミヤココーポ",
+      "大江戸タワーレジデンス",
+      "蔵前JPテラス　住宅棟"
+    ],
+    "西浅草": [
+      "Dia Palace Nishi Asakusa Grand Majest"
+    ],
+    "谷中": [
+      "銀杏荘"
+    ],
+    "鳥越": [
+      "CRESTサカガミ",
+      "Diamond Mansion",
+      "Lions Asakusabashi Myles",
+      "Urbanex Akihabara EAST II",
+      "YKO Bldg",
+      "コンフォール",
+      "ステージファースト新御徒町II",
+      "バードハイツ",
+      "ミハマビル",
+      "メゾン高木",
+      "島田ビル"
+    ]
+  },
+  "unmatchedCount": 111
+}
