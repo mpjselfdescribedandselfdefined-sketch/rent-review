@@ -1,3 +1,6 @@
+import PropertySearch from "../../../../components/PropertySearch";
+import { getTownProperties } from "../../../../lib/getTownProperties";
+
 export default async function TownPage({
   params,
 }: {
@@ -6,10 +9,21 @@ export default async function TownPage({
   const { town } = await params;
   const townName = decodeURIComponent(town);
 
+  const properties = await getTownProperties(
+    "koto",
+    townName
+  );
+
+  const basePath =
+    `/tokyo/koto/${encodeURIComponent(townName)}`;
+
   return (
     <main className="min-h-screen bg-gray-50 p-6">
       <div className="mx-auto max-w-xl">
-        <a href="/tokyo/koto" className="text-sm text-gray-600">
+        <a
+          href="/tokyo/koto"
+          className="text-sm text-gray-600"
+        >
           ← 江東区に戻る
         </a>
 
@@ -18,8 +32,13 @@ export default async function TownPage({
         </h1>
 
         <p className="mt-2 text-gray-600">
-          {townName}の物件口コミを探せます。
+          物件名を検索するか、一覧から選んでください。
         </p>
+
+        <PropertySearch
+          properties={properties}
+          basePath={basePath}
+        />
       </div>
     </main>
   );

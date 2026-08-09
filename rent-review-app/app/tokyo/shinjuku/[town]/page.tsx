@@ -1,5 +1,5 @@
 import PropertySearch from "../../../../components/PropertySearch";
-import propertyData from "../../../../data/properties/shinjuku-nishishinjuku.json";
+import { getTownProperties } from "../../../../lib/getTownProperties";
 
 export default async function TownPage({
   params,
@@ -9,17 +9,21 @@ export default async function TownPage({
   const { town } = await params;
   const townName = decodeURIComponent(town);
 
-  const properties =
-    townName === "西新宿"
-      ? propertyData.properties
-      : [];
+  const properties = await getTownProperties(
+    "shinjuku",
+    townName
+  );
 
-  const basePath = `/tokyo/shinjuku/${encodeURIComponent(townName)}`;
+  const basePath =
+    `/tokyo/shinjuku/${encodeURIComponent(townName)}`;
 
   return (
     <main className="min-h-screen bg-gray-50 p-6">
       <div className="mx-auto max-w-xl">
-        <a href="/tokyo/shinjuku" className="text-sm text-gray-600">
+        <a
+          href="/tokyo/shinjuku"
+          className="text-sm text-gray-600"
+        >
           ← 新宿区に戻る
         </a>
 
