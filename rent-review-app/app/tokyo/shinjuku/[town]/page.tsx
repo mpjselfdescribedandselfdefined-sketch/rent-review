@@ -1,3 +1,5 @@
+import PropertySearch from "../../../../components/PropertySearch";
+
 export default async function TownPage({
   params,
 }: {
@@ -5,6 +7,14 @@ export default async function TownPage({
 }) {
   const { town } = await params;
   const townName = decodeURIComponent(town);
+
+  const properties = [
+    `${townName} サンプルマンションA`,
+    `${townName} サンプルマンションB`,
+    `${townName} サンプルアパートC`,
+  ];
+
+  const basePath = `/tokyo/shinjuku/${encodeURIComponent(townName)}`;
 
   return (
     <main className="min-h-screen bg-gray-50 p-6">
@@ -18,8 +28,13 @@ export default async function TownPage({
         </h1>
 
         <p className="mt-2 text-gray-600">
-          {townName}の物件口コミを探せます。
+          物件名を検索するか、一覧から選んでください。
         </p>
+
+        <PropertySearch
+          properties={properties}
+          basePath={basePath}
+        />
       </div>
     </main>
   );
