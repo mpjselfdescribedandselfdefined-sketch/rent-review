@@ -1,0 +1,110 @@
+export default function TokyoPage() {
+  const wards = [
+    "千代田区",
+    "中央区",
+    "港区",
+    "新宿区",
+    "文京区",
+    "台東区",
+    "墨田区",
+    "江東区",
+    "品川区",
+    "目黒区",
+    "大田区",
+    "世田谷区",
+    "渋谷区",
+    "中野区",
+    "杉並区",
+    "豊島区",
+    "北区",
+    "荒川区",
+    "板橋区",
+    "練馬区",
+    "足立区",
+    "葛飾区",
+    "江戸川区",
+  ];
+
+  const cities = [
+    "八王子市",
+    "立川市",
+    "武蔵野市",
+    "三鷹市",
+    "青梅市",
+    "府中市",
+    "昭島市",
+    "調布市",
+    "町田市",
+    "小金井市",
+    "小平市",
+    "日野市",
+    "東村山市",
+    "国分寺市",
+    "国立市",
+    "福生市",
+    "狛江市",
+    "東大和市",
+    "清瀬市",
+    "東久留米市",
+    "武蔵村山市",
+    "多摩市",
+    "稲城市",
+    "羽村市",
+    "あきる野市",
+    "西東京市",
+  ];
+
+  return (
+    <main className="min-h-screen bg-gray-50 px-5 py-10">
+      <div className="mx-auto max-w-md">
+        <a href="/" className="text-sm text-gray-600">
+          ← トップへ戻る
+        </a>
+
+        <h1 className="mt-6 text-3xl font-bold">
+          東京都から探す
+        </h1>
+
+        <p className="mt-2 text-gray-600">
+          市区町村を選んで、住まいの口コミを探せます。
+        </p>
+
+        <h2 className="mt-8 text-xl font-bold">
+          東京23区
+        </h2>
+
+      <div className="mt-4 grid grid-cols-2 gap-3">
+        {wards.map((area) => (
+          <a
+            key={area}
+            href={
+              area === "新宿区"
+                ? "/tokyo/shinjuku"
+                : area === "千代田区"
+                  ? "/tokyo/chiyoda"
+                  : "#"
+            }
+            className="rounded-xl bg-white p-4 shadow-sm"
+          >
+            {area}
+          </a>
+        ))}
+      </div>
+        <h2 className="mt-10 text-xl font-bold">
+          市部
+        </h2>
+
+        <div className="mt-4 grid grid-cols-2 gap-3">
+          {cities.map((area) => (
+            <button
+              key={area}
+              className="rounded-xl bg-white p-4 shadow-sm"
+            >
+              {area}
+            </button>
+          ))}
+        </div>
+      </div>
+    </main>
+  );
+}

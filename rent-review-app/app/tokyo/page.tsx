@@ -1,0 +1,162 @@
+export default function TokyoPage() {
+  const wards = [
+    "千代田区",
+    "中央区",
+    "港区",
+    "新宿区",
+    "文京区",
+    "台東区",
+    "墨田区",
+    "江東区",
+    "品川区",
+    "目黒区",
+    "大田区",
+    "世田谷区",
+    "渋谷区",
+    "中野区",
+    "杉並区",
+    "豊島区",
+    "北区",
+    "荒川区",
+    "板橋区",
+    "練馬区",
+    "足立区",
+    "葛飾区",
+    "江戸川区",
+  ];
+
+  const cities = [
+    "八王子市",
+    "立川市",
+    "武蔵野市",
+    "三鷹市",
+    "青梅市",
+    "府中市",
+    "昭島市",
+    "調布市",
+    "町田市",
+    "小金井市",
+    "小平市",
+    "日野市",
+    "東村山市",
+    "国分寺市",
+    "国立市",
+    "福生市",
+    "狛江市",
+    "東大和市",
+    "清瀬市",
+    "東久留米市",
+    "武蔵村山市",
+    "多摩市",
+    "稲城市",
+    "羽村市",
+    "あきる野市",
+    "西東京市",
+  ];
+
+  const wardSlugs: Record<string, string> = {
+    "千代田区": "chiyoda",
+    "中央区": "chuo",
+    "港区": "minato",
+    "新宿区": "shinjuku",
+    "文京区": "bunkyo",
+    "台東区": "taito",
+    "墨田区": "sumida",
+    "江東区": "koto",
+    "品川区": "shinagawa",
+    "目黒区": "meguro",
+    "大田区": "ota",
+    "世田谷区": "setagaya",
+    "渋谷区": "shibuya",
+    "中野区": "nakano",
+    "杉並区": "suginami",
+    "豊島区": "toshima",
+    "北区": "kita",
+    "荒川区": "arakawa",
+    "板橋区": "itabashi",
+    "練馬区": "nerima",
+    "足立区": "adachi",
+    "葛飾区": "katsushika",
+    "江戸川区": "edogawa",
+  };
+
+
+
+  const citySlugs: Record<string, string> = {
+    "八王子市": "hachioji",
+    "立川市": "tachikawa",
+    "武蔵野市": "musashino",
+    "三鷹市": "mitaka",
+    "青梅市": "ome",
+    "府中市": "fuchu",
+    "昭島市": "akishima",
+    "調布市": "chofu",
+    "町田市": "machida",
+    "小金井市": "koganei",
+    "小平市": "kodaira",
+    "日野市": "hino",
+    "東村山市": "higashimurayama",
+    "国分寺市": "kokubunji",
+    "国立市": "kunitachi",
+    "福生市": "fussa",
+    "狛江市": "komae",
+    "東大和市": "higashiyamato",
+    "清瀬市": "kiyose",
+    "東久留米市": "higashikurume",
+    "武蔵村山市": "musashimurayama",
+    "多摩市": "tama",
+    "稲城市": "inagi",
+    "羽村市": "hamura",
+    "あきる野市": "akiruno",
+    "西東京市": "nishitokyo",
+  };
+
+  return (
+    <main className="min-h-screen bg-gray-50 px-5 py-10">
+      <div className="mx-auto max-w-md">
+        <a href="/" className="text-sm text-gray-600">
+          ← トップへ戻る
+        </a>
+
+        <h1 className="mt-6 text-3xl font-bold">
+          東京都から探す
+        </h1>
+
+        <p className="mt-2 text-gray-600">
+          市区町村を選んで、住まいの口コミを探せます。
+        </p>
+
+        <h2 className="mt-8 text-xl font-bold">
+          東京23区
+        </h2>
+
+      <div className="mt-4 grid grid-cols-2 gap-3">
+        {wards.map((area) => (
+          <a
+            key={area}
+            href={`/tokyo/${wardSlugs[area]}`}
+            className="rounded-xl bg-white p-4 shadow-sm"
+          >
+            {area}
+          </a>
+        ))}
+      </div>
+        <h2 className="mt-10 text-xl font-bold">
+          市部
+        </h2>
+
+      <div className="mt-4 grid grid-cols-2 gap-3">
+        {cities.map((area) => (
+          <a
+            key={area}
+            href={`/tokyo/${citySlugs[area]}`}
+            className="rounded-xl bg-white p-4 shadow-sm"
+          >
+            {area}
+          </a>
+        ))}
+      </div>
+      </div>
+    </main>
+  );
+}

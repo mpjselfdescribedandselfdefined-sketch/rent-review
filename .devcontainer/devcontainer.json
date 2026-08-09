@@ -1,0 +1,4 @@
+{
+  "forwardPorts": [3000],
+  "postAttachCommand": "bash -lc 'curl -fsS --max-time 1 http://localhost:3000 >/dev/null 2>&1 || (cd /workspaces/rent-review/rent-review-app && nohup npm run dev > /tmp/rent-review-next.log 2>&1 &)'"
+}
